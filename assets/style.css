@@ -1,0 +1,229 @@
+/* NSK Diplom Plugin Styles */
+
+/* General styling */
+.nsk-diplom-header,
+.nsk-diplom-footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nsk-add-diplom-btn {
+    background-color: #0073aa;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nsk-add-diplom-btn:hover {
+    background-color: #005a87;
+    color: white;
+    text-decoration: none;
+}
+
+/* Diplomer grid */
+.nsk-diplomer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* Individual diploma card */
+.nsk-diplom-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.nsk-diplom-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.nsk-diplom-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+.nsk-diplom-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.nsk-diplom-image,
+.nsk-lag-image {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.nsk-diplom-image img,
+.nsk-lag-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nsk-diplom-image img:hover,
+.nsk-lag-image img:hover {
+    transform: scale(1.02);
+}
+
+.nsk-diplom-description {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.nsk-diplom-description p {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Form styling */
+.nsk-diplom-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nsk-diplom-form .form-group {
+    margin-bottom: 25px;
+}
+
+.nsk-diplom-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nsk-diplom-form input[type="text"],
+.nsk-diplom-form input[type="date"],
+.nsk-diplom-form input[type="file"],
+.nsk-diplom-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.nsk-diplom-form input[type="text"]:focus,
+.nsk-diplom-form input[type="date"]:focus,
+.nsk-diplom-form textarea:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,115,170,0.3);
+}
+
+.nsk-diplom-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.nsk-diplom-form input[type="file"] {
+    padding: 8px;
+}
+
+.nsk-diplom-form .button {
+    padding: 12px 24px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.nsk-diplom-form .button-primary {
+    background-color: #0073aa;
+    color: white;
+}
+
+.nsk-diplom-form .button-primary:hover {
+    background-color: #005a87;
+}
+
+.nsk-diplom-form .button:not(.button-primary) {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.nsk-diplom-form .button:not(.button-primary):hover {
+    background-color: #e1e1e1;
+}
+
+/* Success message */
+.nsk-success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nsk-diplomer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .nsk-diplom-form {
+        margin: 0 10px;
+        padding: 20px;
+    }
+    
+    .nsk-diplom-card {
+        padding: 15px;
+    }
+}
+
+/* Admin meta box styling */
+.form-table th {
+    width: 200px;
+}
+
+#diplom_bilde_preview img,
+#lag_bilde_preview img {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Image lightbox effect */
+.nsk-diplom-image img,
+.nsk-lag-image img {
+    transition: opacity 0.3s;
+}
+
+.nsk-diplom-image img:hover,
+.nsk-lag-image img:hover {
+    opacity: 0.9;
+}
